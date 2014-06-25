@@ -9,14 +9,9 @@
 #import "Penguin.h"
 
 @implementation Penguin
-- (id)init
+- (void)play
 {
-    self = [super init];
-    if (self)
-    {
-        CCLOG(@"Penguin Created");
-    }
-    return self;
+    CCLOG(@"play button pressed");
 }
 
 @end
