@@ -28,7 +28,7 @@
 - (void)lauchPenguin
 {
     //loads Penguin.ccb in spritebuilder
-    CCNode* penguin = [CCBReader load:@"Penguin"];
+    CCNode* penguin = [CCBReader load:@"penguin"];
     //position penguin at catapult
     penguin.position =ccpAdd(_catapultArm.position, ccp(16,50));
     //add the penguin to the physicNode of this scene (its physics enabled)
