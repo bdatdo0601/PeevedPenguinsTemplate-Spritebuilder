@@ -26,7 +26,7 @@
     //visualize physics bodies & joints
     _physicsNode.debugDraw = TRUE;
     //nothing shall collide
-    _pullbackNode.physicsBody.collisionMask = @[];
+    
 }
 // called on every touch in scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
