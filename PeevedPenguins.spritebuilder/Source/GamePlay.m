@@ -15,6 +15,8 @@
     CCNode *_catapultArm;
     CCNode *_contentNode;
     CCNode *_pullbackNode;
+    CCNode *_mouseJointNode;
+    CCPhysicsJoint *_mouseJoint;
 }
 // called when CCB file completed loading
 - (void)didLoadFromCCB
@@ -26,12 +28,22 @@
     //visualize physics bodies & joints
     _physicsNode.debugDraw = TRUE;
     //nothing shall collide
-    
+    _pullbackNode.physicsBody.collisionMask = @[];
+    _mouseJointNode.physicsBody.collisionMask = @[];
 }
 // called on every touch in scene
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
-    [self lauchPenguin];
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
+    // start catapult dragging when a touch inside the catapult arm occurs
+    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation))
+    {
+        //move mouseJoint to touch position
+        _mouseJointNode.position = touchLocation;
+        //setup a spring joint between mouseJointNode and the catapult arm
+        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0,0) anchorB:ccp(34,138) restLength:0.f stiffness:3000.f damping:150.f];
+      
+    }
 }
 - (void)retry
 {[[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"GamePlay"]];
