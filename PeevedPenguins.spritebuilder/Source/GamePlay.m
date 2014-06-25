@@ -13,6 +13,7 @@
     CCNode *_levelNode;
     CCPhysicsNode *_physicsNode;
     CCNode *_catapultArm;
+    CCNode *_contentNode;
 }
 // called when CCB file completed loading
 - (void)didLoadFromCCB
