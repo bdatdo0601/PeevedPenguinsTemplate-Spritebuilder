@@ -267,8 +267,6 @@
 					<real>500</real>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1802,7 +1800,7 @@
 								<key>customClass</key>
 								<string></string>
 								<key>displayName</key>
-								<string>CCNode</string>
+								<string>PullbackNode</string>
 								<key>memberVarAssignmentName</key>
 								<string>_pullbackNode</string>
 								<key>memberVarAssignmentType</key>
@@ -1944,6 +1942,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
