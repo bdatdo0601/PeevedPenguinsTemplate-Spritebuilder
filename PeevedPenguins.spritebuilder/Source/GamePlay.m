@@ -1,0 +1,37 @@
+//
+//  GamePlay.m
+//  PeevedPenguins
+//
+//  Created by Dat Do on 6/25/14.
+//  Copyright (c) 2014 Apportable. All rights reserved.
+//
+
+#import "GamePlay.h"
+
+@implementation GamePlay
+{
+    CCPhysicsNode *_physicsNode;
+    CCNode *_catapultArm;
+}
+// called when CCB file completed loading
+- (void)didLoadFromCCB
+{
+    //Start accept touches
+    self.userInteractionEnabled = TRUE;
+}
+// called on every touch in scene
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    [self lauchPenguin];
+}
+
+- (void)lauchPenguin
+{
+    //loads Penguin.ccb in spritebuilder
+    CCNODE* penguin = [CCBReader load:@"Penguin"];
+    //position penguin at catapult
+    penguin.position =ccpAdd(_catapultArm.position, ccp(16,50)
+    //add the penguin to the physicNode of this scene (its physics enabled)
+                             [_physicsNode addChild:penguin];
+}
+@end
