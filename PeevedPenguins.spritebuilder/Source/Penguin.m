@@ -9,9 +9,5 @@
 #import "Penguin.h"
 
 @implementation Penguin
-- (void)play
-{
-    CCLOG(@"play button pressed");
-}
 
 @end
