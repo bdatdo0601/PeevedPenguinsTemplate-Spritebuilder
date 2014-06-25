@@ -27,7 +27,9 @@
 {
     [self lauchPenguin];
 }
-
+- (void)retry
+{[[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"GamePlay"]];
+}
 - (void)lauchPenguin
 {
     //loads Penguin.ccb in spritebuilder
