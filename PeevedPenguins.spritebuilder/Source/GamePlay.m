@@ -50,6 +50,25 @@
     CGPoint touchLocation =[touch locationInNode:_contentNode];
     _mouseJointNode.position = touchLocation;
 }
+- (void)releaseCatapult {
+    if (_mouseJoint != nil)
+    {
+        // releases the joint and lets the catapult snap back
+        [_mouseJoint invalidate];
+        _mouseJoint = nil;
+    }
+}
+- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    //when the touches end, meaning the user releases finger, release catapult
+    [self releaseCatapult];
+}
+- (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    
+//when touches are cancelled, meaning the user drags finger off screen or onto sth else, release catapult
+    [self releaseCatapult];
+}
 - (void)retry
 {[[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"GamePlay"]];
 }
