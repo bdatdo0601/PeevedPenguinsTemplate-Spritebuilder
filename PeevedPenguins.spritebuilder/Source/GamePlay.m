@@ -81,6 +81,8 @@
         _currentPenguin.physicsBody.allowsRotation = FALSE;
         // create a joint to keep penguin fixed in scoop until the catapult is release
         _penguinCatapultJoint = [CCPhysicsJoint connectedPivotJointWithBodyA:_currentPenguin.physicsBody bodyB:_catapultArm.physicsBody anchorA:_currentPenguin.anchorPointInPoints];
+        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:follow];
         
     }
 }
