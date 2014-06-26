@@ -37,9 +37,7 @@
 }
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
 {
-    float energy = [pair totalKineticEnergy];
     //if energy large enough, remove seal
-    if (energy > 500.f)
     {
         [[_physicsNode space] addPostStepBlock:^
          {
