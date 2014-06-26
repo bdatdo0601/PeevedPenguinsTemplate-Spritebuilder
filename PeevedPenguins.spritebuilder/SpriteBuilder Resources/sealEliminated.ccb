@@ -120,7 +120,7 @@
 				<key>type</key>
 				<string>Float</string>
 				<key>value</key>
-				<real>20000</real>
+				<real>200</real>
 			</dict>
 			<dict>
 				<key>name</key>
@@ -156,7 +156,7 @@
 				<string>FloatVar</string>
 				<key>value</key>
 				<array>
-					<real>100</real>
+					<real>50</real>
 					<real>5</real>
 				</array>
 			</dict>
@@ -318,6 +318,8 @@
 				<string>ccbResources/ccbParticleSmoke.png</string>
 			</dict>
 		</array>
+		<key>selected</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -371,9 +373,9 @@
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
-			<real>0.0</real>
+			<real>0.34114575386047363</real>
 			<key>position</key>
-			<real>2.2000000476837158</real>
+			<real>3.3333332538604736</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
