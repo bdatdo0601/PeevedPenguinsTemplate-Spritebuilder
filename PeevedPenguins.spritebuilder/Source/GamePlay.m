@@ -17,7 +17,7 @@
     CCNode *_contentNode;
     CCNode *_pullbackNode;
     CCNode *_mouseJointNode;
-    Penguin *_currentPenguin;
+    CCNode *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
     CCPhysicsJoint *_mouseJoint;
     CCAction *_followPenguin;
