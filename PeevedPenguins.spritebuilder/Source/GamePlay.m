@@ -30,8 +30,6 @@ static const float MIN_SPEED = 5.f;
     self.userInteractionEnabled = TRUE;
     CCScene *level = [CCBReader loadAsScene:@"Levels/Level1"];
     [_levelNode addChild:level];
-    //visualize physics bodies & joints
-    _physicsNode.debugDraw = TRUE;
     //nothing shall collide
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
