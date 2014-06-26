@@ -39,7 +39,7 @@
 {
     float energy = [pair totalKineticEnergy];
     //if energy large enough, remove seal
-    if (energy > 5000.f)
+    if (energy > 500.f)
     {
         [[_physicsNode space] addPostStepBlock:^
          {
