@@ -107,7 +107,7 @@ static const float MIN_SPEED = 5.f;
         // follow the flying penguin
         _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:_followPenguin];
-        _currentPenguin.lauched = TRUE;
+        _currentPenguin.launched = TRUE;
     }
 }
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
@@ -150,7 +150,7 @@ static const float MIN_SPEED = 5.f;
 }
 - (void)update:(CCTime)delta
 {
-if (_currentPenguin.lauched)
+if (_currentPenguin.launched)
 {
     // if speed < min spd, assume attempt is over
     if (ccpLength(_currentPenguin.physicsBody.velocity) <MIN_SPEED)
