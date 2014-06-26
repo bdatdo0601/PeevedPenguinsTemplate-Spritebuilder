@@ -749,8 +749,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>37.999984741210938</real>
-							<real>50.5</real>
+							<real>113.99998474121094</real>
+							<real>14.5</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -778,6 +778,8 @@
 						<string>seal.ccb</string>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -811,8 +813,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>71</real>
-							<real>51.5</real>
+							<real>422</real>
+							<real>19.5</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1059,8 +1061,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>388</real>
-							<real>21.499992370605469</real>
+							<real>380</real>
+							<real>18.499992370605469</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1340,8 +1342,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>56</real>
-							<real>18</real>
+							<real>301</real>
+							<real>64</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1468,8 +1470,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
