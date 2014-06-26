@@ -68,7 +68,7 @@
         //move mouseJoint to touch position
         _mouseJointNode.position = touchLocation;
         //setup a spring joint between mouseJointNode and the catapult arm
-            _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:00.f damping:500.f];
+            _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody bodyB:_catapultArm.physicsBody anchorA:ccp(0, 0) anchorB:ccp(34, 138) restLength:0.f stiffness:5000.f damping:000.f];
         //create penguin from ccb-file
         _currentPenguin = [CCBReader load:@"Penguin"];
         //initially position it on the scoop
