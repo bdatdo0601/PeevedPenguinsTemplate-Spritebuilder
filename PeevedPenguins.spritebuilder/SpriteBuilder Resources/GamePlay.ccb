@@ -55,8 +55,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>220.7530517578125</real>
-						<real>115.34662628173828</real>
+						<real>222.7530517578125</real>
+						<real>109.34662628173828</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -129,27 +129,11 @@
 				</dict>
 				<dict>
 					<key>name</key>
-					<string>limitEnabled</string>
-					<key>type</key>
-					<string>Check</string>
-					<key>value</key>
-					<true/>
-				</dict>
-				<dict>
-					<key>name</key>
-					<string>limitMin</string>
-					<key>type</key>
-					<string>Degrees</string>
-					<key>value</key>
-					<real>-70.342994689941406</real>
-				</dict>
-				<dict>
-					<key>name</key>
 					<string>limitMax</string>
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>0.0</real>
+					<real>45</real>
 				</dict>
 				<dict>
 					<key>name</key>
@@ -171,6 +155,8 @@
 					<integer>1</integer>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -299,8 +285,6 @@
 					<real>650</real>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1463,8 +1447,8 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>234.86505126953125</real>
-											<real>208.33662414550781</real>
+											<real>236.86505126953125</real>
+											<real>202.33662414550781</real>
 											<integer>0</integer>
 											<integer>0</integer>
 											<integer>0</integer>
