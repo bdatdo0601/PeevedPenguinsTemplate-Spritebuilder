@@ -35,16 +35,14 @@
     _physicsNode.collisionDelegate = self;
     self.physicsBody.collisionType = @"seal";
 }
--(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
-{
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
     float energy = [pair totalKineticEnergy];
-    //if energy large enough, remove seal
-    if (energy > 5000.f)
-    {
-        [[_physicsNode space] addPostStepBlock:^
-         {
-             [self sealRemoved:nodeA];
-         } key:nodeA];
+    
+    // if energy is large enough, remove the seal
+    if (energy > 5000.f) {
+        [[_physicsNode space] addPostStepBlock:^{
+            [self sealRemoved:nodeA];
+        } key:nodeA];
     }
 }
 - (void)sealRemoved:(CCNode *)seal
