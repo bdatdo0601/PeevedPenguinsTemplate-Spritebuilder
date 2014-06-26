@@ -70,6 +70,14 @@
         // releases the joint and lets the catapult snap back
         [_mouseJoint invalidate];
         _mouseJoint = nil;
+        // releases the joint and lets penguins fly
+        [_penguinCatapultJoint invalidate];
+        _penguinCatapultJoint = nil;
+        // after snapping allow rotation
+        _currentPenguin.physicsBody.allowsRotation = TRUE;
+        // follow the flying penguin
+        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:follow];
     }
 }
 - (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
