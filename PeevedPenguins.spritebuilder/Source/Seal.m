@@ -9,5 +9,8 @@
 #import "Seal.h"
 
 @implementation Seal
-
+- (void)didLoadfromCCB
+{
+     self.physicsBody.collisionType = @"seal";
+}
 @end
