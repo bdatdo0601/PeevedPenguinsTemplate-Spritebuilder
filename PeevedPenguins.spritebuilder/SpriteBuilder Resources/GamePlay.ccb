@@ -129,11 +129,19 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>limitEnabled</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>limitMax</string>
 					<key>type</key>
 					<string>Degrees</string>
 					<key>value</key>
-					<real>45</real>
+					<real>0.0</real>
 				</dict>
 				<dict>
 					<key>name</key>
