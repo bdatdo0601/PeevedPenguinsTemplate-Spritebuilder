@@ -129,6 +129,30 @@
 				</dict>
 				<dict>
 					<key>name</key>
+					<string>limitEnabled</string>
+					<key>type</key>
+					<string>Check</string>
+					<key>value</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>limitMin</string>
+					<key>type</key>
+					<string>Degrees</string>
+					<key>value</key>
+					<real>-70.342994689941406</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>limitMax</string>
+					<key>type</key>
+					<string>Degrees</string>
+					<key>value</key>
+					<real>0.0</real>
+				</dict>
+				<dict>
+					<key>name</key>
 					<string>motorMaxForce</string>
 					<key>type</key>
 					<string>FloatCheck</string>
@@ -137,6 +161,14 @@
 						<real>100</real>
 						<false/>
 					</array>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>layoutType</string>
+					<key>type</key>
+					<string>Byte</string>
+					<key>value</key>
+					<integer>1</integer>
 				</dict>
 			</array>
 		</dict>
@@ -267,6 +299,8 @@
 					<real>650</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1807,8 +1841,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
