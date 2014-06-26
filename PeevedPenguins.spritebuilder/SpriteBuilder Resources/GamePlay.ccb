@@ -291,8 +291,6 @@
 					<real>300</real>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -1266,7 +1264,7 @@
 								<key>physicsBody</key>
 								<dict>
 									<key>affectedByGravity</key>
-									<true/>
+									<false/>
 									<key>allowsRotation</key>
 									<true/>
 									<key>bodyShape</key>
@@ -1511,6 +1509,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
