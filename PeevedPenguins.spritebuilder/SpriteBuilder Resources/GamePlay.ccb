@@ -164,8 +164,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>204.57421875</real>
-						<real>291.546875</real>
+						<real>215.37503051757812</real>
+						<real>289.73043823242188</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -202,8 +202,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>-6.8787994384765625</real>
-						<real>-13.633575439453125</real>
+						<real>3.9220123291015625</real>
+						<real>-15.45001220703125</real>
 					</array>
 				</dict>
 				<dict>
@@ -1850,8 +1850,8 @@
 									<key>points</key>
 									<array>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>6.7696685791015625</real>
+											<real>6.530487060546875</real>
 										</array>
 									</array>
 									<key>polygons</key>
@@ -1919,6 +1919,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -2644,8 +2646,6 @@
 						<string>waitingPenguin.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
