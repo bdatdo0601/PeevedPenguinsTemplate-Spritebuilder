@@ -35,7 +35,7 @@
     _physicsNode.collisionDelegate = self;
     self.physicsBody.collisionType = @"seal";
 }
-- (void)CCPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
+-(void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB
 {
     float energy = [pair totalKineticEnergy];
     //if energy large enough, remove seal
@@ -46,7 +46,7 @@
              [self sealRemoved:nodeA];
          } key:nodeA];
     }
-};
+}
 - (void)sealRemoved:(CCNode *)seal
 {
     // load particle effect
